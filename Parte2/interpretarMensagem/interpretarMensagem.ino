@@ -47,7 +47,7 @@ void setup() {
 }
 
 void loop() {
-  uint8_t i;
+  
   WiFiClient client = server.available();
   // Aplicação tenta se conectar ao servidor
   if (client)
@@ -57,18 +57,16 @@ void loop() {
     {
       if (client.available())
       {
-
         char msg = client.read();
 
         if(msg == 'a'){
-
-          Serial.println("Direita");
+          Serial.println("Esquerda");
 
         }
 
         if(msg == 'd'){
 
-          Serial.println("Esquerda");
+          Serial.println("Direita");
         }
 
         if(msg == 'x'){
@@ -82,7 +80,6 @@ void loop() {
 
         }
         if(msg == 's'){
-
           Serial.println("Traz");
 
         }

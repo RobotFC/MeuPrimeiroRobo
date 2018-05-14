@@ -69,8 +69,6 @@ void loop() {
     {
       if (client.available())
       {
-
-
         char msg = client.read();
 
         if(msg == 'a'){
@@ -103,8 +101,6 @@ void loop() {
           digitalWrite(Ponte1_cima_direita_baixo_esquerda, LOW);
           analogWrite(Ponte2_cima_esquerda_baixo_direita, velocidade);
           digitalWrite(Ponte2_cima_direita_baixo_esquerda, LOW);
-
-
         }
         if(msg == 's'){
           Serial.println("Tras");
@@ -134,7 +130,5 @@ void loop() {
       delay(10);
     }
    }
-    delay(1); 
-
-
+    delay(1);
 }

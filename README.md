@@ -15,3 +15,5 @@ http://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/soft-access-point-cl
 http://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/server-examples.html
 
 https://www.arduino.cc/reference/en/language/functions/math/map/
+
+https://play.google.com/store/apps/details?id=com.lammiudt.ims

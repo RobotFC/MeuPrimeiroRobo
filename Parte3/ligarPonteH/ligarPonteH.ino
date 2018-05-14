@@ -65,8 +65,10 @@ void loop() {
 
         if(msg == 'a'){
           Serial.println("Esquerda");
-          digitalWrite(Ponte1_cima_esquerda_baixo_direita, HIGH);
           digitalWrite(Ponte1_cima_direita_baixo_esquerda, LOW);
+          delayMicroseconds(10);
+          digitalWrite(Ponte1_cima_esquerda_baixo_direita, HIGH);
+
         }
 
         if(msg == 'd'){
@@ -98,7 +100,7 @@ void loop() {
       delay(10);
     }
    }
-    delay(1); 
+    delay(1);
 
 
 }

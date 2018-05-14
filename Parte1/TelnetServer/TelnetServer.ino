@@ -1,10 +1,8 @@
 /**
  * Configurar cliente
- * 
+ *
  */
 #include <ESP8266WiFi.h>
-
-
 
 const char* ssid = "rfc";
 // mínimo de 8 caracteres
@@ -43,7 +41,7 @@ void setup() {
 }
 
 void loop() {
-  uint8_t i;
+
   WiFiClient client = server.available();
   // Aplicação tenta se conectar ao servidor
   if (client)
@@ -53,8 +51,7 @@ void loop() {
     {
       if (client.available())
       {
-        // caracter enter  is \r
-        //String msg = client.readStringUntil('\r');
+      
         char msg = client.read();
         Serial.println(msg);
 
@@ -62,11 +59,8 @@ void loop() {
       delay(10);
     }
    }
-    delay(1); // give the web browser time to receive the data
+    delay(1); 
 
-    // close the connection:
-    //client.stop();
-    //Serial.println("[Client disonnected]");
 
 
 }
